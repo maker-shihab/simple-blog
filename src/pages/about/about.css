@@ -1,0 +1,40 @@
+.about__story {
+  margin-top: 100px;
+}
+.about__story-container,
+.about__vision-container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  column-gap: 10%;
+  align-items: center;
+}
+.about__mission-container {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  column-gap: 10%;
+  align-items: center;
+}
+.about__section-image img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about__section-ttile {
+  padding-bottom: 20px;
+}
+.contact {
+  padding-top: 100px;
+}
+.contact__socail ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.contact__socail ul li a svg {
+  font-size: 38px;
+}
+.contact__socail ul li:hover a svg {
+  color: var(--color-secondary);
+}

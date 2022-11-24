@@ -1,0 +1,105 @@
+nav {
+  height: 5rem;
+  width: 100vw;
+  background: var(--color-primary);
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Only Show Medium and Samall Device */
+.nav__toggle-btn {
+  display: none;
+  background: transparent;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+.nav__toggle-btn span {
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  display: block;
+  margin-bottom: 4px;
+  border-radius: 25px;
+  transition: 0.3s all ease;
+}
+.nav__toggle-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 5px);
+}
+.nav__toggle-btn.active span:nth-child(2) {
+  transform: rotate(-45deg) translate(0px, 4px);
+}
+.nav__toggle-btn.active span:nth-child(3) {
+  transform: translate(0px, -14px);
+  opacity: 0;
+  visibility: hidden;
+}
+/* Only Show Medium and Samall Device */
+.logo {
+  width: 7rem;
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  column-gap: 3.5rem;
+  transition: 0.4s all ease;
+}
+.nav__links a {
+  transition: var(--transition);
+}
+.nav__link a:hover {
+  color: var(--color-secondary);
+}
+.active-nav {
+  position: relative;
+  z-index: 1;
+}
+.active-nav::after {
+  position: absolute;
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--color-primary);
+  transform: rotate(45deg);
+  margin-top: 0.9rem;
+  left: calc(50% - 0.6rem);
+  z-index: -1;
+  bottom: -40px;
+}
+ul.nav__links.active {
+  right: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__toggle-btn {
+    display: block;
+  }
+  ul.nav__links {
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    width: 300px;
+    background: var(--color-primary);
+    right: -500px;
+    top: 80px;
+    padding: 20px;
+    row-gap: 10px;
+    z-index: 99;
+  }
+  ul.nav__links li a {
+    padding: 10px;
+    display: block;
+  }
+  ul.nav__links li a::after {
+    display: none;
+  }
+}
