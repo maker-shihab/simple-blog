@@ -309,6 +309,9 @@ footer {
 }
 /* MEDIA QUERIES(Medium Screen) */
 @media screen and (max-width: 600px) {
+  .logo {
+    width: 10rem;
+  }
   .main__header-container .main__hader-right {
     display: none;
   }
@@ -350,5 +353,13 @@ footer {
   /* Footer */
   .footer__container {
     grid-template-columns: 1fr;
+  }
+  .footer__container article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }

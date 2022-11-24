@@ -38,3 +38,21 @@
 .contact__socail ul li:hover a svg {
   color: var(--color-secondary);
 }
+/* Medioum Screen */
+@media screen and (max-width: 1024px) {
+  .about__vision-container,
+  .about__story-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__mission-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about__section-content {
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}

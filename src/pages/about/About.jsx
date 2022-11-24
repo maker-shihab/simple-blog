@@ -6,7 +6,7 @@ import AboutImage3 from '../../images/about3.jpg';
 import HeaderImage from '../../images/header_bg_1.jpg';
 import './about.css';
 const About = () => {
-  return (
+  return ( 
     <>
       <Headers title="About Us" image={HeaderImage}>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nam, modi quae quisquam est placeat. Suscipit
