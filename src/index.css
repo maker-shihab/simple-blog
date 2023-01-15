@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 * {
   margin: 0;
   border: 0;
@@ -67,13 +68,13 @@ svg {
 }
 /* GENERAL STYLE */
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--color-gray-100);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   overflow-x: hidden;
-  background: var(--color-gray-600);
+  background: var(--color-gray-600) url("./images/bg_texture.png");
 }
 .container {
   width: var(--container-width-lg);
@@ -89,6 +90,7 @@ main {
   width: fit-content;
   margin: 0 auto;
   padding: 0.9rem 2rem;
+  font-weight: 500;
   background: var(--color-primary);
   border-radius: 1.5rem;
   transition: var(--transition);
@@ -115,6 +117,7 @@ main {
   border-radius: 0 3rem 0 3rem;
   text-align: center;
   border: 2px solid transparent;
+  transition: var(--transition);
 }
 .card:hover {
   border-color: var(--color-gray-400);
@@ -144,6 +147,10 @@ main {
   margin-top: 1rem;
   display: block;
   font-weight: 300;
+}
+.card:hover .btn {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
 }
 /* Header Content */
 .header {

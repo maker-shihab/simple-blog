@@ -56,3 +56,12 @@
     padding-top: 30px;
   }
 }
+/* Small Screen */
+@media screen and (max-width: 576px) {
+  .about__section-image img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

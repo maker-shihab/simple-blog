@@ -60,6 +60,7 @@ nav {
   color: var(--color-secondary);
 }
 .active-nav {
+  font-weight: 500;
   position: relative;
   z-index: 1;
 }
